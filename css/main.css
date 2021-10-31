@@ -91,7 +91,7 @@ small, .text_small {
   align-items: center;
   justify-content: center;
   padding:0rem 1rem;
-  width:min(25rem,100%)%;
+  width:min(25rem,100%);
   border-style:outset;
   border-radius:2rem;
   font-size:2rem;
@@ -107,7 +107,7 @@ small, .text_small {
   color:gold
 }
 
-.btn:active{
+.btn:active {
   background-color:rgba(88, 100, 112, 0.747);
   color:gold;
 }
@@ -137,8 +137,6 @@ small, .text_small {
   border:outset gold;
 }
 
-
-
 .card img {
   display:flex;
   padding:0;
@@ -148,10 +146,9 @@ small, .text_small {
 }
 
 
-
 /* -------------------     Containers  ---------------- */
 
-.btn-wrap{
+.btn-wrap {
   display:flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +200,7 @@ small, .text_small {
 /* -------------------- Footer Nav Section -------------------- */
 
 
-.nav-footer ul{
+.nav-footer ul {
   display:flex;
   flex-flow:row nowrap;
   gap:1.5rem;
@@ -221,12 +218,11 @@ small, .text_small {
 }
 
 
-
 /* --------------------------Sub Footer ----------------------- */
 
 
 .sub-footer {
-  background-color: rgb(165, 141, 2);
+  background-color: rgba(173, 173, 173, 0.685);
   padding: 0rem;
 }
 
@@ -247,6 +243,8 @@ small, .text_small {
 .sub-footer li a:active {
   text-decoration: underline;
 }
+
+
 /* ---------------------- Logo --------------------- */
 
 
@@ -258,6 +256,7 @@ small, .text_small {
 .logo:hover {
   width:16rem;
 }
+
 
 /* ------------------------  Navbar  ----------------------*/
 
@@ -329,7 +328,6 @@ small, .text_small {
   padding: 2rem 0rem
 }
 
-
 .hero-content {
   display:flex;
   flex-flow: column nowrap;
@@ -345,7 +343,7 @@ small, .text_small {
 /* - - - - - - - - - - - - - Cards - - - - - - - - - - - - */
 
 
-.cards{
+.cards {
   background:radial-gradient(rgba(141, 138, 109, 0.651),rgba(109, 135, 141, 0.466)),#012a47;
   border: solid rgba(109, 135, 141, 0.24)
 }
@@ -359,12 +357,11 @@ small, .text_small {
   border:outset white;
 }
 
-
 .card-content {
   color:white;
 }
 
-.card-img{
+.card-img {
   display:flex;
   align-items: center;
 }
@@ -373,23 +370,23 @@ small, .text_small {
   background-color:rgba(255, 255, 255, 0.356);
 }
 
+
 /* - - - - - - - - - - - About - - - - - - - - - - - - - -  */
 
 
 .about {
-  background:radial-gradient(rgba(141, 138, 109, 0.212),rgba(109, 135, 141, 0.24)),#001a2c;
+  background:radial-gradient(rgba(141, 138, 109, 0.212),rgba(109, 135, 141, 0.24)),#516e85;
 }
 
 .about-content {
   padding-bottom: 2rem;
-  border:solid rgba(109, 135, 141, 0.24)
+  border:solid rgba(109, 135, 141, 0.61)
 }
-
 
 .about-content h2 {
   text-decoration: underline;
   border-bottom:solid rgba(118, 124, 143, 0.473);
-  background-color:rgba(118, 124, 143, 0.473)
+  background-color:rgba(76, 129, 145, 0.788)
 }
 
 .about-content p {
@@ -397,10 +394,11 @@ small, .text_small {
 }
 
 
-
 @media only screen and (min-width: 45em) {
 
-  /* - - - - - - - - - Type Hierarchy - - - - - - - - - -  */
+
+/* - - - - - - - - - Type Hierarchy - - - - - - - - - -  */
+
 
 h1 {
   font-size: 3.5rem;
@@ -420,11 +418,10 @@ small, .text_small {
 }
 
 
-
-
 /* - - - - - - - - - - Navbar - - - - - - - - - - */
 
-.navbar{
+
+.navbar {
   padding: 0rem 0rem;
 }  
 
@@ -446,16 +443,20 @@ small, .text_small {
   font-size: 1.25rem;
 }
 
+
 /* - - - - - - - - - - Main - - - - - - - - - - */
-  
-/* -------------------hero banner tablet ----------------- */
+
+
+/*- - - - - - - - - - - Hero  - - - - - - - - - - - - - - */
 
 
 .hero {
   padding: 4rem 2rem;
 }
 
-/* ---------------------tablet sized cards ---------------------- */
+
+/*  - - - - - - - - - - - - Cards  - - - - - - - - - - - - -*/
+
 
 .cards .container {
   flex-flow: row wrap;
@@ -481,8 +482,8 @@ small, .text_small {
 }
 
 
+ /* - - - - - - - - - - - - - - - - About  - - - - - - - - - - - - - */
 
-/* ----------------tablet size about ------------------- */
 
 .img-wrap {
   display: flex;
@@ -491,7 +492,6 @@ small, .text_small {
 }
 
 .img-wrap img {
-
   width:60%
 }
 
@@ -521,40 +521,44 @@ small, .text_small {
 }
 
 
-  /* - - - - - - - - - - Navbar - - - - - - - - - - */
-  .navbar {
+/* - - - - - - - - - - Navbar - - - - - - - - - - */
+
+
+.navbar {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .navbar .container {
+.navbar .container {
     display:grid;
     grid-template-columns: 25% 30% 45%;
     margin:0;
-  }
+}
 
-  .navbar .logo {
+.navbar .logo {
     grid-column: 1/2;
     width:100%
-  }
+}
 
-  .nav {
+.nav {
     grid-column: 3/4;
     width:100%;
-  }
+}
 
-  .nav li {
+.nav li {
     flex-wrap: nowrap;
-  }
+}
 
-  /* - - - - - - - - - - Main - - - - - - - - - - */
-  
+
+/* - - - - - - - - - - Main - - - - - - - - - - */
+
 
 .hero {
   padding:10rem 2rem;
 }
 
-/* ------------------cards ----------------------------- */
+
+/* - - - - - - - - - - Cards - - - - - - - - - - - -*/
 
 
 .cards .container{
@@ -601,11 +605,11 @@ small, .text_small {
 
  /* - - - - - - - - - - - - About - - - - - - - -- - - - - */
 
+
 .about .container {
   display:flex;
   align-items: stretch;
   flex-direction: row;
-
 }
 
 .img-wrap {
@@ -620,7 +624,7 @@ small, .text_small {
   width:100%;
 }
 
-.about-content{
+.about-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -630,10 +634,12 @@ small, .text_small {
   text-align: left;
 }
 
+
   /* - - - - - - - - - - Footer - - - - - - - - - - */
 
+
 .footer .container,
-.sub-footer .container{
+.sub-footer .container {
   display:grid;
   grid-template-columns: 1fr 2fr;
 }
