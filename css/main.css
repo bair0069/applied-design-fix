@@ -310,6 +310,7 @@ small, .text_small {
 
 .about-content p {
   margin-bottom:2rem;
+  padding: 0rem 1rem;
 }
 
  /* - - - - - - - - - - - - -  Footer - - - - - - - - - - - - - - -  */
