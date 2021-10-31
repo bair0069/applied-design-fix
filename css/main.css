@@ -83,8 +83,14 @@ small, .text_small {
 
 
 
-/* --------------------------- Buttons ------------------------- */
+/* - - - - - - - - - - - - - - -Buttons- - - - - - - - - - - - - - - */
 
+.btn-wrap {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0;
+}
 
 .btn {
   display: flex;
@@ -112,48 +118,9 @@ small, .text_small {
   color:gold;
 }
 
-
- /* ---------------------- Cards ------------------------- */
-
-
-.card {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration:none;
-  padding:1rem;
-  border-radius:1rem;
-  width:100%;
-  margin-bottom: 1rem;
-}
-
-.card:hover,
-.card:target {
-  border:outset gold;
-}
-
-.card:active {
-  background-color:rgba(65, 69, 80, 0.514);
-  border:outset gold;
-}
-
-.card img {
-  display:flex;
-  padding:0;
-  margin-bottom: 1rem;
-  width:20rem;
-  border-radius: 1.5rem;
-}
+/*- - - - - - - - - - - - - - -Containers- - - - - - - - - - - - - - -*/
 
 
-/* -------------------     Containers  ---------------- */
-
-.btn-wrap {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding:0;
-}
 
 
 .container {
@@ -168,84 +135,9 @@ small, .text_small {
   align-self: center;
 }
 
-.col {
-  display: flex;
-  width:100%;
-}
 
 
-/*-------------------------Footers -------------------------*/
-
-
-.footer {
-  background-color: rgb(212, 210, 210);
-  text-align: center;
-}
-
-.footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer a {
-  color: #001a2c;
-}
-
-.footer > .container {
-  padding: 1rem;
-}
-
-
-/* -------------------- Footer Nav Section -------------------- */
-
-
-.nav-footer ul {
-  display:flex;
-  flex-flow:row nowrap;
-  gap:1.5rem;
-}
-
-.nav-footer li a {
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.nav-footer li a:hover,
-.nav-footer li a:target,
-.nav-footer li a:active {
-  text-decoration:underline;
-}
-
-
-/* --------------------------Sub Footer ----------------------- */
-
-
-.sub-footer {
-  background-color: rgba(173, 173, 173, 0.685);
-  padding: 0rem;
-}
-
-.sub-footer ul {
-  display:flex;
-  flex-flow:row nowrap;
-  text-decoration: none;
-  gap:1.5rem;
-}
-
-.sub-footer li a {
-  text-decoration:none;
-  font-size:small
-}
-
-.sub-footer li a:hover,
-.sub-footer li a:target,
-.sub-footer li a:active {
-  text-decoration: underline;
-}
-
-
-/* ---------------------- Logo --------------------- */
+/*- - - - - - - - - - - - - - -Logo- - - - - - - - - - - - - - -*/
 
 
 .logo {
@@ -258,8 +150,14 @@ small, .text_small {
 }
 
 
-/* ------------------------  Navbar  ----------------------*/
+/* - - - - - - - - - - - - - - - Main Page - Mobile First!- - - - - - - - - - - - - - - - - - */
 
+
+
+
+
+
+/* - - - - - - - - - - - - - - Nav Bar - - - - - - - - - - - - - - */
 
 .navbar {
   background:radial-gradient(rgba(141, 138, 109, 0.137),rgba(109, 135, 141, 0.466)), #003c64;
@@ -300,23 +198,12 @@ small, .text_small {
   text-decoration: none
 }
 
-
-
-
-
-/* - - - - - - - - - - - - - - - Main Page (order of appearance) - - - - - - - - - - - - - - - - - - */
-/* ---------------------------Mobile First -------------------------- */
-
-
-
-
-
-/* - - - - - - - - - - - - - - Nav Bar - - - - - - - - - - - - - - */
-
-
 .logo {
   margin: 0rem 1rem .5rem 1rem;
 }
+
+
+/* - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - -*/
 
 
 /* - - - - - - - - - - -Hero- - - - - - - - - - - - - */
@@ -343,6 +230,7 @@ small, .text_small {
 /* - - - - - - - - - - - - - Cards - - - - - - - - - - - - */
 
 
+
 .cards {
   background:radial-gradient(rgba(141, 138, 109, 0.651),rgba(109, 135, 141, 0.466)),#012a47;
   border: solid rgba(109, 135, 141, 0.24)
@@ -352,13 +240,35 @@ small, .text_small {
   padding:1rem 1rem 0rem 1rem;
 }
 
+.col {
+  display: flex;
+  width:100%;
+}
+
 .card {
   background-color: rgba(118, 124, 143, 0.473);
   border:outset white;
 }
 
-.card-content {
-  color:white;
+.card {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration:none;
+  padding:1rem;
+  border-radius:1rem;
+  width:100%;
+  margin-bottom: 1rem;
+}
+
+.card:hover,
+.card:target {
+  border:outset gold;
+}
+
+.card:active {
+  background-color:rgba(65, 69, 80, 0.514);
+  border:outset gold;
 }
 
 .card-img {
@@ -367,7 +277,16 @@ small, .text_small {
 }
 
 .card img {
+  display:flex;
+  padding:0;
+  margin-bottom: 1rem;
+  width:20rem;
+  border-radius: 1.5rem;
   background-color:rgba(255, 255, 255, 0.356);
+}
+
+.card-content {
+  color:white;
 }
 
 
@@ -392,6 +311,76 @@ small, .text_small {
 .about-content p {
   margin-bottom:2rem;
 }
+
+ /* - - - - - - - - - - - - -  Footer - - - - - - - - - - - - - - -  */
+
+ .footer {
+  background-color: rgb(212, 210, 210);
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: #001a2c;
+}
+
+.footer > .container {
+  padding: 1rem;
+}
+
+
+ /* - - - - - - - - - - - - - - - Footer Nav - - - - - - - - - - - - */
+
+
+.nav-footer ul {
+  display:flex;
+  flex-flow:row nowrap;
+  gap:1.5rem;
+}
+
+.nav-footer li a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-footer li a:hover,
+.nav-footer li a:target,
+.nav-footer li a:active {
+  text-decoration:underline;
+}
+
+
+ /* - - - - - - - - - - - - - - -Sub Footer - - - - - - - - - - - - - */
+
+
+.sub-footer {
+  background-color: rgba(173, 173, 173, 0.685);
+  padding: 0rem;
+}
+
+.sub-footer ul {
+  display:flex;
+  flex-flow:row nowrap;
+  text-decoration: none;
+  gap:1.5rem;
+}
+
+.sub-footer li a {
+  text-decoration:none;
+  font-size:small
+}
+
+.sub-footer li a:hover,
+.sub-footer li a:target,
+.sub-footer li a:active {
+  text-decoration: underline;
+}
+
 
 
 @media only screen and (min-width: 45em) {
@@ -433,7 +422,6 @@ small, .text_small {
   margin: 0,auto;
 }
 
-
 .nav ul{
   flex-flow: row nowrap;
   gap:1.5rem;
@@ -444,10 +432,10 @@ small, .text_small {
 }
 
 
-/* - - - - - - - - - - Main - - - - - - - - - - */
+/* - - - - - - - - - - - - - - -Main - - - - - - - - - - - - - - -*/
 
 
-/*- - - - - - - - - - - Hero  - - - - - - - - - - - - - - */
+/*- - - - - - - - - - - - - - -Hero  - - - - - - - - - - - - - - */
 
 
 .hero {
