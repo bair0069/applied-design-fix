@@ -129,9 +129,9 @@ small, .text_small {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  width: min(80vw, 100%);
+  width: min(70em, 100%);
   margin:0 auto;
-  padding:1rem;
+  padding:3rem;
   align-self: center;
 }
 
@@ -212,7 +212,13 @@ small, .text_small {
 .hero {
   background: radial-gradient(rgba(94, 100, 78, 0.596),rgba(109, 135, 141, 0.521)), url('../img/hero-banner.jpg');
   background-position: center;
-  padding: 2rem 0rem
+  padding: 1rem 0rem
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 .hero-content {
@@ -223,7 +229,7 @@ small, .text_small {
 }
 
 .hero-content p {
-  margin-bottom:3rem;
+  margin-bottom:2rem;
 }
 
 
@@ -237,7 +243,7 @@ small, .text_small {
 }
 
 .cards .container {
-  padding:1rem 1rem 0rem 1rem;
+  padding:3rem 1rem 2rem 1rem;
 }
 
 .col {
@@ -318,18 +324,20 @@ small, .text_small {
  /* - - - - - - - - - - - - -  Footer - - - - - - - - - - - - - - -  */
 
  .footer {
-  background-color: rgb(212, 210, 210);
+  background-color: rgb(80, 80, 80);
   text-align: center;
+  color: white
 }
 
 .footer ul {
+  color:white;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .footer a {
-  color: #001a2c;
+  color: white;
 }
 
 .footer > .container {
@@ -362,7 +370,7 @@ small, .text_small {
 
 
 .sub-footer {
-  background-color: rgba(173, 173, 173, 0.685);
+  background-color: rgba(46, 46, 46, 0.685);
   padding: 0rem;
 }
 
@@ -557,7 +565,7 @@ small, .text_small {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width:min(80vw, 100%);
+  width:min(70em, 100%);
   margin: 0 auto;
   align-items: stretch;
 }
@@ -599,8 +607,10 @@ small, .text_small {
 
 .about .container {
   display:flex;
+  width:100%;
   align-items: stretch;
   flex-direction: row;
+  gap: 1.5rem;
 }
 
 .img-wrap {
